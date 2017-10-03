@@ -10,9 +10,13 @@ media.
 
 ## Usage
 
-    var audiotools = require('@evancooney/audiotools');
+    var Audiotools = require('@evancooney/audiotools');
+    var formattedNum = Audiotools.formatMilliseconds(64000.00);
 
-    var formattedNum = audiotools.formatMilliseconds(64000.00);
+    or with React
+
+    import {formatMilliseconds} from 'audiotools'
+    formatMilliseconds(64000.00);
 
 
   Output should be `01:04`

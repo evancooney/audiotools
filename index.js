@@ -25,6 +25,13 @@ module.exports = {
         (seconds < 10 ? '0' : '') + seconds;
   },
 
+  /**
+   * Convert duration to MM:SS format
+   *
+   * @param  {Number} milliseconds
+   * @return {String}
+   */
+
   formatSeconds: function(milliseconds) {
 
     if (milliseconds <= 0) {
