@@ -1,0 +1,26 @@
+{
+  "name": "audiotools",
+  "version": "0.1.0",
+  "description": "Collection of generic functions for audio and other time-based media",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evancooney/audiotools.git"
+  },
+  "keywords": [
+    "audio"
+  ],
+  "author": "Evan Cooney <evancooney@gmail.com> (http://evancoony.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evancooney/audiotools/issues"
+  },
+  "homepage": "https://github.com/evancooney/audiotools#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.0"
+  }
+}
