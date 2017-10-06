@@ -47,6 +47,46 @@ module.exports = {
 
     return (minutes < 10 ? '0' : '') + minutes + ':' +
         (seconds < 10 ? '0' : '') + seconds;
+  },
+
+  /**
+   * Extract bit depth
+   *
+   * @param  {sampleRate} Sample Rate
+   * @param  {channels} Channels
+   * @param  {bitRate} Bit rate
+   * @return {Number}
+   */
+
+  formatBitDepth: function(sampleRate, channels, bitRate) {
+
+    if (sampleRate == '' || channels == '' || bitRate == '') {
+      return 0
+    }
+
+    var bitDepth = ( bitRate / channels)  / sampleRate
+
+    return Math.round(bitDepth)
+  },
+
+  /**
+   * Extract bit rate
+   *
+   * @param  {sampleRate} Sample Rate
+   * @param  {channels} Channels
+   * @param  {bitDepth} Bit Depth
+   * @return {Number}
+   */
+
+  formatBitRate: function(sampleRate, channels, bitDepth) {
+
+    if (sampleRate == '' || channels == '' || bitDepth == '') {
+      return 0
+    }
+
+    var bitRate = sampleRate * channels  * bitDepth
+
+    return Math.round(bitRate)
   }
 
 };

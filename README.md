@@ -2,24 +2,43 @@ Audio Tools
 =========
 
 A small library that provides utility functions for audio and other time-based
-media.
+media (especially the functions I've re-written countless times!)
 
 ## Installation
 
   `npm install @evancooney/audiotools`
 
+      var Audiotools = require('@evancooney/audiotools');
+      var formattedNum = Audiotools.formatMilliseconds(64000.00);
+
+      or with React
+
+      import {formatMilliseconds} from 'audiotools'
+      formatMilliseconds(64000.00);
+
+
+      Output should be `01:04`
+
 ## Usage
 
-    var Audiotools = require('@evancooney/audiotools');
-    var formattedNum = Audiotools.formatMilliseconds(64000.00);
+**formatMilliseconds(milliseconds)**
+-- formatMilliSeconds(64000.00)
+-- Output is: 01:04
 
-    or with React
+**formatMilliseconds(seconds)**
+-- formatMilliSeconds(64)
+-- Output is: 01:04
 
-    import {formatMilliseconds} from 'audiotools'
-    formatMilliseconds(64000.00);
+-- Empty or negative values with return: 0:00
 
+**formatBitDepth(sampleRate, channels, bitrate)**
+-- formatBitDepth(44100, 2, 1411267)
+-- Output is: 16
 
-  Output should be `01:04`
+**formatBitrate(sampleRate, channels, bitDepth)**
+-- formatBitDepth(44100, 2, 16)
+-- Output is: 1411200
+
 
 
 ## Tests
@@ -29,4 +48,4 @@ media.
 ## Contributing
 
 In lieu of a formal style guide, take care to maintain the existing coding style.
-Add unit tests for any new or changed functionality. Lint and test your code.
+Would welcome any assistance!

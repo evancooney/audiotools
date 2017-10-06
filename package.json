@@ -1,6 +1,6 @@
 {
   "name": "audiotools",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Collection of generic functions for audio and other time-based media",
   "main": "index.js",
   "scripts": {
