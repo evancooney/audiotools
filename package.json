@@ -1,6 +1,6 @@
 {
   "name": "audiotools",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Collection of generic functions for audio and other time-based media",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/evancooney/audiotools.git"
   },
   "keywords": [
-    "audio"
+    "audio", "sample rate", "time based media", "bit depth", "media"
   ],
   "author": "Evan Cooney <evancooney@gmail.com> (http://evancoony.com)",
   "license": "ISC",

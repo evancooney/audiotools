@@ -22,22 +22,23 @@ media (especially the functions I've re-written countless times!)
 ## Usage
 
 **formatMilliseconds(milliseconds)**
--- formatMilliSeconds(64000.00)
--- Output is: 01:04
+Usage:
+- formatMilliSeconds(64000.00)
+- Output is: 01:04
 
 **formatMilliseconds(seconds)**
--- formatMilliSeconds(64)
--- Output is: 01:04
+- formatMilliSeconds(64)
+- Output is: 01:04
 
 -- Empty or negative values with return: 0:00
 
 **formatBitDepth(sampleRate, channels, bitrate)**
--- formatBitDepth(44100, 2, 1411267)
--- Output is: 16
+- formatBitDepth(44100, 2, 1411267)
+-  Output is: 16
 
 **formatBitrate(sampleRate, channels, bitDepth)**
--- formatBitDepth(44100, 2, 16)
--- Output is: 1411200
+- formatBitDepth(44100, 2, 16)
+- Output is: 1411200
 
 
 
