@@ -26,7 +26,7 @@ Usage:
 - formatMilliSeconds(64000.00)
 - Output is: 01:04
 
-**formatMilliseconds(seconds)**
+**formatSeconds(seconds)**
 - formatMilliSeconds(64)
 - Output is: 01:04
 
